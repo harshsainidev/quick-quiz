@@ -1,0 +1,153 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    max-width: 1580px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+body {
+
+    /* margin: 0px; */
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+
+.page-container {
+    margin: 0px;
+margin-bottom: 0px;
+}
+
+
+nav {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+nav .logo .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    color: white;
+    padding: 22px 40px;
+    background-color: #333333;
+}
+
+.active {
+    background-color: #222222;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.maintext {
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333333;
+    color: White;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Tablets */
+@media all and (max-width: 800px) {
+    nav { justify-content: flex-start;
+    
+    }
+    nav ul {
+        justify-content: space-between;
+    }
+    }
+    
+    /* Phones */
+    @media all and (max-width: 600px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav ul {
+            width: 100%;
+            flex-direction: column;
+            align-items: stretch;
+        }
+    
+        nav ul li {
+            text-align: center;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+
+        .container .map {
+            margin-left: 0px;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 20px auto;
+      }
+      .circle-frame {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .circle-frame img {
+        width: 100%;
+        height: auto;
+      }
+     
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .profession {
+        font-size: 16px;
+      }
+      
